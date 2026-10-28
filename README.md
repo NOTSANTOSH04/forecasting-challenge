@@ -171,7 +171,3 @@ datasets, virtual environments, caches, credentials and local audit scratch
 files. Download the official release separately to reproduce it. Packaging
 never uploads, pushes or submits anything. See [SUBMISSION.md](SUBMISSION.md)
 and [ASSIGNMENT.md](ASSIGNMENT.md) for the original contracts.
-
-## AI-assisted development disclosure
-
-This submission was developed with assistance from OpenAI ChatGPT and Codex for implementation guidance, code generation and debugging, testing workflows, analysis, and technical documentation. The forecasting results, validation approach, source code, and limitations are provided for independent review. The candidate is responsible for understanding and explaining the submitted work.
