@@ -1,0 +1,35 @@
+{
+  "input": "outputs\\train_targets.csv",
+  "input_rows_used": 110,
+  "validated_training_sha256": "a75082741970213ebeda3004f89806b8e6227dd85031698cd19a2d72203c2d88",
+  "python": "3.13.17",
+  "numpy": "2.5.4",
+  "pandas": "3.1.0",
+  "matplotlib": "3.11.2",
+  "train_ends": [
+    38,
+    62,
+    86
+  ],
+  "horizon": 24,
+  "peak_quantile": 0.95,
+  "peak_quantile_method": "linear",
+  "peak_comparison": "actual >= training P95",
+  "residual_convention": "actual - predicted",
+  "residual_std_ddof": 0,
+  "models": [
+    "Persistence",
+    "Moving Average (6)",
+    "Moving Average (12)",
+    "Exponential Smoothing",
+    "Linear Trend (12)",
+    "Linear Trend (24)",
+    "Ridge AR (3)",
+    "Ridge AR (6)"
+  ],
+  "smoothing_alpha": 0.3,
+  "ridge_alpha": 1.0,
+  "holdout_targets_accessed": false,
+  "selection_status": "provisional; validation only",
+  "relative_improvement_with_zero_baseline": "undefined (NaN / blank CSV cell)"
+}

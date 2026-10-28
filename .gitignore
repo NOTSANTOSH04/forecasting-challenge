@@ -2,3 +2,14 @@
 .venv/
 .pytest_cache/
 __pycache__/
+.ipynb_checkpoints/
+challenge_data/*.csv.gz
+.env
+.env.*
+!.env.example
+.aws/
+.submission-audit/
+.report-render-*/
+atomity_forecasting_submission.zip
+build/
+dist/

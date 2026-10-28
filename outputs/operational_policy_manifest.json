@@ -1,0 +1,41 @@
+{
+  "training_sha256": "a75082741970213ebeda3004f89806b8e6227dd85031698cd19a2d72203c2d88",
+  "python": "3.13.17",
+  "numpy": "2.5.4",
+  "pandas": "3.1.0",
+  "matplotlib": "3.11.2",
+  "input_sha256": {
+    "outputs\\evaluation_validation_predictions.csv": "e800b6a35bca56548271c292616ff398616bba6a9629a5417e23d6089c3de49e",
+    "outputs\\evaluation_manifest.json": "623594e9da474bc45cd5b8b2fa42b43945ad138e5cf402b2cf049860e72a1826",
+    "outputs\\category_statistics.csv": "85f0ec256943ef74c246e426b792021f7cfd28589d6a00c338e7562795d2da85"
+  },
+  "primary_model": "Ridge AR (6)",
+  "fallback_model": "Moving Average (12)",
+  "vm_count_model": "Persistence",
+  "peak_quantile": 0.95,
+  "quantile_method": "linear",
+  "threshold_comparison": ">=",
+  "policies": {
+    "point_only": null,
+    "historical_q90": 0.9,
+    "historical_q95": 0.95
+  },
+  "proposed_policy": "historical_q90",
+  "policy_status": "illustrative; fixed choices, not selected by policy validation results",
+  "consecutive_point_exceedances": 3,
+  "horizon_groups": {
+    "First hour": [
+      1,
+      12
+    ],
+    "Second hour": [
+      13,
+      24
+    ]
+  },
+  "calibration_rule": "same-model OOF errors with timestamp <= origin; separate first/second hour",
+  "warmup_rule": "No previous OOF errors: empirical policies unavailable; point-only comparator retained",
+  "holdout_targets_accessed": false,
+  "new_models_fitted": false,
+  "formal_interval_coverage": false
+}
